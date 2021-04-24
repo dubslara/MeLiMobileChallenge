@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8757D81726333EEE0026306A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757D81626333EEE0026306A /* AppDelegate.swift */; };
+		8757D81B26333EEE0026306A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757D81A26333EEE0026306A /* RootViewController.swift */; };
+		8757D81E26333EEE0026306A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8757D81C26333EEE0026306A /* Main.storyboard */; };
+		8757D82026333EEF0026306A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8757D81F26333EEF0026306A /* Assets.xcassets */; };
+		8757D82326333EEF0026306A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8757D82126333EEF0026306A /* LaunchScreen.storyboard */; };
+		8757D8342633BC8E0026306A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757D8332633BC8E0026306A /* HomeViewController.swift */; };
+		8757D8372633BC9C0026306A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757D8362633BC9C0026306A /* SearchViewController.swift */; };
+		8757D83A2633BCAA0026306A /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757D8392633BCAA0026306A /* ProductViewController.swift */; };
+		AB15F386E4C9FD361B9F4B08 /* Pods_MeLiMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E76D16549299359225FA3F8 /* Pods_MeLiMobileChallenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E76D16549299359225FA3F8 /* Pods_MeLiMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeLiMobileChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8757D81326333EEE0026306A /* MeLiMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLiMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8757D81626333EEE0026306A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8757D81A26333EEE0026306A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		8757D81D26333EEE0026306A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8757D81F26333EEF0026306A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8757D82226333EEF0026306A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8757D82426333EEF0026306A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8757D8332633BC8E0026306A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8757D8362633BC9C0026306A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8757D8392633BCAA0026306A /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		96EA86160EAA6D11611ED098 /* Pods-MeLiMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeLiMobileChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MeLiMobileChallenge/Pods-MeLiMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		EDBEA2F56466CE57AB4D7DB4 /* Pods-MeLiMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeLiMobileChallenge.release.xcconfig"; path = "Target Support Files/Pods-MeLiMobileChallenge/Pods-MeLiMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8757D81026333EEE0026306A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB15F386E4C9FD361B9F4B08 /* Pods_MeLiMobileChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F903C77FCD9937036B38F0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96EA86160EAA6D11611ED098 /* Pods-MeLiMobileChallenge.debug.xcconfig */,
+				EDBEA2F56466CE57AB4D7DB4 /* Pods-MeLiMobileChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69B7C9FC04F1B987A303A302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E76D16549299359225FA3F8 /* Pods_MeLiMobileChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8757D80A26333EEE0026306A = {
+			isa = PBXGroup;
+			children = (
+				8757D81526333EEE0026306A /* MeLiMobileChallenge */,
+				8757D81426333EEE0026306A /* Products */,
+				5F903C77FCD9937036B38F0A /* Pods */,
+				69B7C9FC04F1B987A303A302 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8757D81426333EEE0026306A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8757D81326333EEE0026306A /* MeLiMobileChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8757D81526333EEE0026306A /* MeLiMobileChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				8757D81626333EEE0026306A /* AppDelegate.swift */,
+				8757D81A26333EEE0026306A /* RootViewController.swift */,
+				8757D8332633BC8E0026306A /* HomeViewController.swift */,
+				8757D8362633BC9C0026306A /* SearchViewController.swift */,
+				8757D8392633BCAA0026306A /* ProductViewController.swift */,
+				8757D81C26333EEE0026306A /* Main.storyboard */,
+				8757D81F26333EEF0026306A /* Assets.xcassets */,
+				8757D82126333EEF0026306A /* LaunchScreen.storyboard */,
+				8757D82426333EEF0026306A /* Info.plist */,
+			);
+			path = MeLiMobileChallenge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8757D81226333EEE0026306A /* MeLiMobileChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8757D82726333EEF0026306A /* Build configuration list for PBXNativeTarget "MeLiMobileChallenge" */;
+			buildPhases = (
+				D404DFA5E19B5A6FB02B16FD /* [CP] Check Pods Manifest.lock */,
+				8757D80F26333EEE0026306A /* Sources */,
+				8757D81026333EEE0026306A /* Frameworks */,
+				8757D81126333EEE0026306A /* Resources */,
+				4852A25898ADED1B4470BDAF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeLiMobileChallenge;
+			productName = MeLiMobileChallenge;
+			productReference = 8757D81326333EEE0026306A /* MeLiMobileChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8757D80B26333EEE0026306A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8757D81226333EEE0026306A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 8757D80E26333EEE0026306A /* Build configuration list for PBXProject "MeLiMobileChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8757D80A26333EEE0026306A;
+			productRefGroup = 8757D81426333EEE0026306A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8757D81226333EEE0026306A /* MeLiMobileChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8757D81126333EEE0026306A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8757D82326333EEF0026306A /* LaunchScreen.storyboard in Resources */,
+				8757D82026333EEF0026306A /* Assets.xcassets in Resources */,
+				8757D81E26333EEE0026306A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4852A25898ADED1B4470BDAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeLiMobileChallenge/Pods-MeLiMobileChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeLiMobileChallenge/Pods-MeLiMobileChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeLiMobileChallenge/Pods-MeLiMobileChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D404DFA5E19B5A6FB02B16FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeLiMobileChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8757D80F26333EEE0026306A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8757D81B26333EEE0026306A /* RootViewController.swift in Sources */,
+				8757D81726333EEE0026306A /* AppDelegate.swift in Sources */,
+				8757D8372633BC9C0026306A /* SearchViewController.swift in Sources */,
+				8757D83A2633BCAA0026306A /* ProductViewController.swift in Sources */,
+				8757D8342633BC8E0026306A /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8757D81C26333EEE0026306A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8757D81D26333EEE0026306A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8757D82126333EEF0026306A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8757D82226333EEF0026306A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8757D82526333EEF0026306A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8757D82626333EEF0026306A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8757D82826333EEF0026306A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96EA86160EAA6D11611ED098 /* Pods-MeLiMobileChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZU4XQMMXY;
+				INFOPLIST_FILE = MeLiMobileChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laradubs.MeLiMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8757D82926333EEF0026306A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDBEA2F56466CE57AB4D7DB4 /* Pods-MeLiMobileChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZU4XQMMXY;
+				INFOPLIST_FILE = MeLiMobileChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laradubs.MeLiMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8757D80E26333EEE0026306A /* Build configuration list for PBXProject "MeLiMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8757D82526333EEF0026306A /* Debug */,
+				8757D82626333EEF0026306A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8757D82726333EEF0026306A /* Build configuration list for PBXNativeTarget "MeLiMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8757D82826333EEF0026306A /* Debug */,
+				8757D82926333EEF0026306A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8757D80B26333EEE0026306A /* Project object */;
+}
