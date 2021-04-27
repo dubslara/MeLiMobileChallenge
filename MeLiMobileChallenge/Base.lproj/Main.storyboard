@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a3Z-O6-OfI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v55-RX-Nvj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,20 +8,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="3su-IC-yaQ">
+        <!--Navigation Controller-->
+        <scene sceneID="LjH-Dc-NQb">
             <objects>
-                <viewController id="a3Z-O6-OfI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="f4c-aT-EgS">
+                <navigationController id="v55-RX-Nvj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NUd-a0-5OB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nza-8c-F2z" kind="relationship" relationship="rootViewController" id="1tb-OI-8vH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZl-OR-qBx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-891" y="145"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="h9Y-hy-JGc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vq-cj-Up1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="nza-8c-F2z" customClass="HomeViewController" customModule="MeLiMobileChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jxu-ht-S1y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="1ef-bf-IHF"/>
+                        <viewLayoutGuide key="safeArea" id="Ypp-p8-4ci"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CED-Gf-Sca"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EAX-Xd-ZPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-942" y="244"/>
+            <point key="canvasLocation" x="-2172" y="116"/>
         </scene>
     </scenes>
     <resources>
