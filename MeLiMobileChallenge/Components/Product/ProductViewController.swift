@@ -66,7 +66,7 @@ final class ProductViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         view.addSubview(mainStackView)
         mainStackView.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(16)
