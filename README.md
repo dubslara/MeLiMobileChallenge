@@ -17,10 +17,10 @@ Considero que esta versión cuenta con la mejor relación entre features y nivel
 
 # Dependencias
 
-AlamoFire: Como gestor de dependencias.
-Snapkit: Framework para simplificar el uso de layout constraints.
-PromiseKit: Para manejar pedidos asincrónicos y manejo de errores.
-SDWebImage: Para facilitar la descarga y utilización de imágenes.
+- AlamoFire: Como gestor de dependencias.
+- Snapkit: Framework para simplificar el uso de layout constraints.
+- PromiseKit: Para manejar pedidos asincrónicos y manejo de errores.
+- SDWebImage: Para facilitar la descarga y utilización de imágenes.
 
 # Screens
 
