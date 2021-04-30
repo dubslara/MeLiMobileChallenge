@@ -33,12 +33,7 @@ final class SearchViewController: UIViewController {
 
     let activityIndicator = UIActivityIndicatorView(style: .large)
 
-    let viewModel = ViewModel()
-    var products = [Product]() {
-        didSet {
-            tableView.reloadData()
-        }
-    }
+    lazy var viewModel = ViewModel(searchText: searchText)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,34 +49,33 @@ final class SearchViewController: UIViewController {
             make.center.equalToSuperview()
         }
 
-        activityIndicator.startAnimating()
-        firstly {
-            Product.get(text: searchText)
-        }.done { [weak self] products in
-            self?.products = products
-        }.ensure { [weak self] in
-            self?.activityIndicator.stopAnimating()
-        }.catch { [weak self] error in
-            guard let navVC = self?.navigationController else {
-                return
-            }
-            let alert = UIAlertController(title: "Oops!", message: "There was an error fetching your items", preferredStyle: .alert)
-            alert.show(navVC, sender: self)
-            AppError.log(error)
+        viewModel.didChange { [weak self] in
+            self?.reloadData()
+        }
+
+        viewModel.loadData()
+    }
+
+    func reloadData() {
+        tableView.reloadData()
+        if viewModel.isLoading {
+            activityIndicator.startAnimating()
+        } else {
+            activityIndicator.stopAnimating()
         }
     }
 }
 
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        products.count
+        viewModel.products.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchResultCell.identifier) as? SearchResultCell else {
             return UITableViewCell()
         }
-        let product = products[indexPath.item]
+        let product = viewModel.products[indexPath.item]
         cell.configure(product)
         return cell
     }
@@ -89,9 +83,6 @@ extension SearchViewController: UITableViewDataSource {
 
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let product = products[indexPath.item]
-        // Instanciar detalle
-        let productViewController = ProductViewController(product: product)
-        navigationController?.pushViewController(productViewController, animated: true)
+        viewModel.didSelect(item: indexPath.row)
     }
 }

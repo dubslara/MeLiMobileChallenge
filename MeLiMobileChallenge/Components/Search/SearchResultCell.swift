@@ -25,6 +25,7 @@ final class SearchResultCell: UITableViewCell {
     let descriptionLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.preferredFont(forTextStyle: .body)
+        label.numberOfLines = 2
         return label
     }()
 
@@ -37,20 +38,22 @@ final class SearchResultCell: UITableViewCell {
     lazy var detailStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [self.descriptionLabel, self.priceLabel])
         stackView.axis = .vertical
-        stackView.spacing = 8
+        stackView.spacing = 0
         return stackView
     }()
 
     lazy var mainStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [self.thumbnailView, self.detailStackView])
         stackView.axis = .horizontal
+        stackView.spacing = 16
+        stackView.alignment = .center
         return stackView
     }()
     
     func configure(_ product: Product) {
         thumbnailView.sd_setImage(with: product.thumbnail, completed: nil)
         descriptionLabel.text = product.title
-        priceLabel.text = "$ \(product.price)"
+        priceLabel.text = product.priceFormatted
     }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

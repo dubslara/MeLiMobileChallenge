@@ -11,12 +11,27 @@ import PromiseKit
 
 struct Product: Codable {
     let id: String
+    let condition: String
     let title: String
     let price: Double
     let thumbnail: URL
-}
+    let availableCount: Int
+    let soldCount: Int
 
-// MARK: - Search
+    var priceFormatted: String {
+        "$ \(String(format: "%g", price))"
+    }
+ 
+    enum CodingKeys: String, CodingKey {
+        case id
+        case condition
+        case title
+        case price
+        case thumbnail
+        case availableCount = "available_quantity"
+        case soldCount = "sold_quantity"
+    }
+}
 
 extension Product {
     private struct Response: Codable {

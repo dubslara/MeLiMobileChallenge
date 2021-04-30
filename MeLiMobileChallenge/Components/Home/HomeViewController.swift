@@ -15,29 +15,57 @@ final class HomeViewController: UIViewController {
         searchController.searchBar.delegate = self
         searchController.obscuresBackgroundDuringPresentation = false
 
-        // Place the search bar in the navigation bar.
         navigationItem.searchController = searchController
 
-        // Make the search bar always visible.
         navigationItem.hidesSearchBarWhenScrolling = false
         return searchController
+        
+    }()
+    
+    let appLogo: UIImageView = UIImageView()
+    
+    lazy var autorLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.preferredFont(forTextStyle: .body)
+        label.text = "Desarrollado por Lara Dubs."
+        label.textColor = UIColor(named: "TextColor")
+        return label
     }()
 
+    
+    lazy var mainStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [
+            self.appLogo,
+            self.autorLabel
+        ])
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        stackView.spacing = 16
+        return stackView
+    }()
+    
     var searchText: String {
         searchController.searchBar.text ?? ""
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Mercado Libre (berreta)"
+        title = "Mercado Libre"
         navigationItem.searchController = searchController
+        view.addSubview(mainStackView)
+        mainStackView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        appLogo.contentMode = .scaleAspectFit
+        appLogo.image = UIImage(named: "MeLilogo")
+        appLogo.snp.makeConstraints {make in
+            make.width.equalTo(view).multipliedBy(0.75)
+        }
     }
 }
 
 extension HomeViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let searchViewController = SearchViewController(searchText: searchText)
-        navigationController?.pushViewController(searchViewController, animated: true)
+        Navigation.productSearch(text: searchText)
     }
-
 }
