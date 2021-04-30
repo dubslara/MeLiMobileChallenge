@@ -24,3 +24,10 @@ Considero que esta versión cuenta con la mejor relación entre features y nivel
 
 # Screens
 
+| Campo de búsqueda  | Resultados de la búsqueda |  Detalle del producto  |
+| ------------- | ------------- | -------------- |
+| ![Screen1](https://user-images.githubusercontent.com/81202273/116756561-8cc25a00-a9c9-11eb-9e7a-84141746175e.png)  | ![Screen2](https://user-images.githubusercontent.com/81202273/116756569-8fbd4a80-a9c9-11eb-94ce-cbde67125ec2.png)  |  ![Screen3](https://user-images.githubusercontent.com/81202273/116756574-921fa480-a9c9-11eb-8caa-23058047f29b.png)  |
+
+
+
+
